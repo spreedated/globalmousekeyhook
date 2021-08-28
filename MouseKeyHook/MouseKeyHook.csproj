@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.21022</ProductVersion>
@@ -10,7 +10,7 @@
     <Version>5.6.1-alpha</Version>
     <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netcoreapp3.1;net462;net472</TargetFrameworks>
+    <TargetFrameworks>net5.0-windows;net461;net472</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>Gma.System.MouseKeyHook</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -35,6 +35,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/gmamaladze/globalmousekeyhook</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MKH.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>

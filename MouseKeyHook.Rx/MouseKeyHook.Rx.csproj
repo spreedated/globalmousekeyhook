@@ -4,7 +4,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9754749C-1EEA-4468-8C32-B5BAC3235F54}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netcoreapp3.1;net462;net472</TargetFrameworks>
+    <TargetFrameworks>net461;net472;net5.0-windows</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MouseKeyHook.Rx</RootNamespace>
@@ -24,6 +24,9 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/gmamaladze/globalmousekeyhook</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MKH.Rx.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
